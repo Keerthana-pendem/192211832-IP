@@ -1,0 +1,32 @@
+   /* Define the keyframes for the continuous rotation */
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Apply the animation to the element */
+.rotating-element {
+    display: inline-block; /* Required for transform to work properly */
+    animation: rotate 5s linear infinite; /* Adjust duration and timing function as needed */
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotating Animation</title>
+    <style>
+        /* Include the CSS code from above here */
+    </style>
+</head>
+<body>
+    <div class="rotating-element">
+        <!-- Content or image to rotate -->
+        <img src="path/to/your/image.jpg" alt="Rotating Image">
+    </div>
+</body>
+</html>
